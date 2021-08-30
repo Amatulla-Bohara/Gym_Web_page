@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Balthazar&family=Kaisei+HarunoUmi&family=Permanent+Marker&family=Rampart+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            color: white;
+        }
+    body{
+        margin: 0px;
+        margin: 0px;
+        background: url('bgimg.png') no-repeat ;
+        background-color: black;
+        
+    }
+     
+      .left{
+          position: absolute;
+          display: inline-block;
+          top: 15px;
+          left: 20px;
+          /* border: 2px solid yellow; */
+      }
+      .left img{
+       margin-left: 25px;
+          width:130px;
+          height: 100px;
+          filter: invert(100%);
+      }
+      .left div {
+          text-align: center;
+          font-family: 'Baloo Bhai 2', cursive;
+          font-size: 20px;
+
+      }
+      .mid{
+          display: block;
+          width: 40%;
+          margin: 30px auto;
+          /* border: 2px solid greenyellow; */
+    
+      }
+      .navbar{
+        display: inline-block;
+      }
+      .navbar a{
+          text-decoration: none;
+          font-size: 20px;
+          padding: 10px;
+          font-family:  'Balthazar', serif ;
+      }
+      .navbar a:hover{
+         color: rgb(8, 4, 4);
+         background-color: rgba(178, 252, 5, 0.897);
+     }
+     .navbar a:active{
+         text-decoration: underline ;
+     }
+
+      .right{
+          position: absolute;
+          display: inline-block;
+          top: 15px;
+          right: 10px;
+        /* border: 2px solid orangered; */
+      }
+      .btn{
+          margin: 5px;
+          padding: 10px;
+         background-color: black;
+          color: rgb(202, 240, 33);
+         font-family: 'Baloo Bhai 2', cursive;
+          border-radius: 25px;
+          font-size: 20px ;
+      }
+      .btn :hover{
+        background-color: rgb(111, 252, 111);
+        color: black;
+      }
+      h3{
+          color:greenyellow;
+          background-color: black;
+          text-align: center;
+          font-family: 'Balthazar', serif;
+          font-size: 50px;
+          margin-top: 113px;
+         
+      }
+      form{
+        margin: 50px 60px;
+          font-family: 'Baloo Bhai 2', cursive;
+          font-size: 25px;
+          font: rgb(93, 240, 93);
+      }
+      form input{
+        padding: 5px 33px;
+    margin: 3px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(10, 10, 10);
+    font-size: 22px;
+      }
+     #subbtn{
+        /* background-color: rgb(241 251 143); */
+    color: rgb(113, 247, 80);
+    width: 300px;
+    height: 47px;
+    margin: 30px 28px;
+    padding: 0px;
+    font-size: 30px;
+     }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+
+        <div class="left">
+        <img src="logo.png" alt="GABBAR GYMKHANA">
+        <DIV>GABBAR GYMKHANA</DIV>
+        </div>
+
+    <div class="mid">
+        <div class="navbar" id="elements1">
+            <a href="#HOME">HOME</a>
+         </div>
+         <div class="navbar" id="elements2">
+             <a href="#ABOUTUS">ABOUT US</a>
+         </div>
+         <div class="navbar" id="elements3">
+             <a href="#SERVICES">SERVICES</a>
+         </div>
+         <div class="navbar" id="elements4">
+             <a href="#CONTACTUS">CONTACT US</a>
+         </div>
+ 
+    </div>
+        <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+        </div>
+    </header>
+        <H3>WELCOME TO GABBAR GYMKHANA</H3>
+    </div> 
+    <form action="backend.php">
+    <div><label for="name" >
+    NAME:
+    <div> <input type="text" id="name" placeholder="enter your name">
+</label> 
+</div>
+</div>
+<div>
+<label for="bmi" >
+    BMI: 
+    <div><input type="text" id="BMI" placeholder="enter your BMI value">
+</label> </div>
+</div>
+<div>
+<label for="contact" >
+    CONTACT: <div> <input type="text" id="contact" placeholder="enter your contact details">
+</label> 
+</div>
+</div>
+<div>
+<label for="rangeofpackage" >
+    PACKAGE RANGE: <div><input type="text" id="rangeofpackage" placeholder="enter your package">
+</label> 
+</div>
+</div> 
+<button class="btn" id="subbtn">SUBMIT NOW</button> 
+    </form>
+</body>
+</html>
